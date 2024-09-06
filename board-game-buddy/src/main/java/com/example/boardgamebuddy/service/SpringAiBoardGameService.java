@@ -59,6 +59,7 @@ public class SpringAiBoardGameService implements BoardGameService {
                         .param("rules",gameRules))
                 .user(question.question())
                 .call()
+//                .content()
                 .entity(Answer.class);
 
 
